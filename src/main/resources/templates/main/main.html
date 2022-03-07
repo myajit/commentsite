@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico" />
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>JHJ</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="resume-down">
+            <div class="myphoto">
+                <img src="/image/myphoto.png" alt="">
+            </div>
+            <div class="resume-info">
+                <p><span>성실한 인재 ' 정현직 '</span> 지금 바로 뽑아주세요.</p>
+            </div>
+            <a class="down-button" href="">
+                연락하기
+            </a>
+            <div class="close">
+                <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
+                    enable-background="new 0 0 60 60" xml:space="preserve">
+                    <g>
+                        <g>
+
+                            <line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"
+                                stroke-miterlimit="10" x1="6.8" y1="6.8" x2="53.3" y2="53.3" />
+                        </g>
+
+                        <line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"
+                            stroke-miterlimit="10" x1="53.3" y1="6.8" x2="6.8" y2="53.3" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="user-container inner-container-size">
+                <div class="userInfo">
+                    <div class="login-image">
+                        <img src="/image/loginImage.png" alt="">
+                    </div>
+                    <div class="login-info">
+                        <p th:text="${member.name}">로그인 사용자 이름</p>
+                        <p>myajit@naver.com</p>
+                    </div>
+                </div>
+                <div class="logout">
+                    <form action="/logout" method="post">
+                        <button class="logout-button" type="submit">로그아웃</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="main-image inner-container-size">
+                <img src="/image/mainPhoto.png" alt="">
+            </div>
+
+            <div class="main-intro inner-container-size">
+                <p class="intro-title">SELF INTRODUCTION</p>
+                <p class="intro-sub"><span>인내심, 긍정적인 마음, 감사</span> 세가지를 중심으로 <br>
+                    노력하는 개발자가 되겠습니다.</p>
+            </div>
+
+            <div class="title-line inner-container-size">
+                <div class="line"></div>
+                <div class="line-inner-title"><p>Skill</p></div>
+                <div class="line"></div>
+            </div>
+
+            <div class="skill inner-container-size">
+                <div class="inner-skill">
+                    <div class="skill-circle">
+                        <img src="/image/js.png" alt="">
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+                <div class="inner-skill">
+                    <div class="skill-circle">
+                        <img src="/image/html.png" alt="" style="animation-delay: 0.2s;">
+                    </div>
+                    <p>html</p>
+                </div>
+                <div class="inner-skill">
+                    <div class="skill-circle">
+                        <img src="/image/css.png" alt="" style="animation-delay: 0.4s;">
+                    </div>
+                    <p>css</p>
+                </div>
+                <div class="inner-skill">
+                    <div class="skill-circle">
+                        <img src="/image/springboot.png" alt="" style="animation-delay: 0.6s;">
+                    </div>
+                    <p>SpringBoot</p>
+                </div>
+                <div class="inner-skill">
+                    <div class="skill-circle">
+                        <img src="/image/thymeleaf.png" alt="" style="animation-delay: 0.8s;">
+                    </div>
+                    <p>Thymleaf</p>
+                </div>
+
+            </div>
+
+            <div class="title-line inner-container-size">
+                <div class="line"></div>
+                <div class="line-inner-title"><p>Project</p></div>
+                <div class="line"></div>
+            </div>
+
+            <div class="project inner-container-size">
+                <div class="inner-project">
+                    <a href="#" class="project-squar">
+                        <img src="" alt="">
+                    </a>
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="" alt="">
+                        </div>
+                        <p>FutsalOn</p>
+                    </div>
+                </div>
+                <div class="inner-project">
+                    <a href="#" class="project-squar">
+                        <img src="" alt="">
+                    </a>
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="" alt="">
+                        </div>
+                        <p>FutsalOn</p>
+                    </div>
+                </div>
+                <div class="inner-project">
+                    <a href="#" class="project-squar">
+                        <img src="" alt="">
+                    </a>
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="" alt="">
+                        </div>
+                        <p>FutsalOn</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="title-line inner-container-size">
+                <div class="line"></div>
+                <div class="line-inner-title"><p>Board</p></div>
+                <div class="line"></div>
+            </div>
+
+            <div class="borad inner-container-size">
+                <div class="comment-container">
+                    <form class="comment" action="" onsubmit="return false;">
+                        <p>댓글을 달아주세요</p>
+                        <div class="write">
+                            <svg version="1.1" id="_x33_5" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 57.1 80.8"
+                                 enable-background="new 0 0 57.1 80.8" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path fill="#777777"
+                                              d="M3.5,80c-0.3,0-0.6-0.1-0.8-0.3C2.3,79.5,2,79,2.1,78.4l1.3-15.5c0.1-0.7,0.2-1.3,0.5-2
+                                   c0-0.1,0-0.2,0.1-0.2L4,60.6l29.8-48.8c0.2-0.3,0.6-0.4,0.9-0.2l14.2,8.7c0.3,0.2,0.4,0.6,0.2,0.9L19.2,70c0,0.1-0.1,0.1-0.2,0.2
+                                   c-0.4,0.5-0.9,1-1.5,1.3L4.3,79.8C4.1,79.9,3.8,80,3.5,80z M5.2,61.1C5.2,61.1,5.2,61.1,5.2,61.1c-0.3,0.6-0.5,1.3-0.6,1.9
+                                   L3.4,78.5c0,0.1,0,0.1,0.1,0.1l0.1,0.1c0,0,0,0,0,0l13.3-8.2c0.6-0.3,1-0.8,1.4-1.3c0,0,0,0,0,0L47.7,21l-13.1-8L5.2,61.1z" />
+                                    </g>
+                                    <g>
+                                        <path fill="#777777"
+                                              d="M51.1,17.3c-0.1,0-0.2,0-0.3-0.1L36.6,8.5c-0.3-0.2-0.4-0.6-0.2-0.9l2.7-4.4c0.9-1.5,2.5-2.4,4.2-2.4
+                                   c0.9,0,1.8,0.3,2.6,0.7l6.8,4.1c2.3,1.4,3.1,4.5,1.6,6.8l-2.7,4.4C51.5,17.1,51.3,17.3,51.1,17.3z M37.8,7.8l13,7.9l2.4-3.9
+                                   c1-1.7,0.5-4-1.2-5l-6.8-4.1c-0.6-0.4-1.2-0.5-1.9-0.5c-1.3,0-2.4,0.7-3.1,1.7L37.8,7.8z" />
+                                    </g>
+                                    <g>
+                                        <path fill="#777777" d="M48.6,21.4c-0.1,0-0.2,0-0.3-0.1L34,12.7c-0.3-0.2-0.4-0.6-0.2-0.9l2.5-4.2c0.1-0.1,0.2-0.3,0.4-0.3
+                                   c0.2,0,0.3,0,0.5,0.1l14.2,8.7c0.1,0.1,0.3,0.2,0.3,0.4c0,0.2,0,0.3-0.1,0.5l-2.5,4.2c-0.1,0.1-0.2,0.3-0.4,0.3
+                                   C48.7,21.4,48.6,21.4,48.6,21.4z M35.3,11.9l13.1,8l1.9-3l-13.1-8L35.3,11.9z" />
+                                    </g>
+                                    <g>
+                                        <path fill="#777777" d="M11.2,75.6c-0.1,0-0.2,0-0.3-0.1l-8-4.9c-0.3-0.2-0.4-0.6-0.2-0.9c0.2-0.3,0.6-0.4,0.9-0.2l8,4.9
+                                   c0.3,0.2,0.4,0.6,0.2,0.9C11.7,75.4,11.5,75.6,11.2,75.6z" />
+                                    </g>
+                                    <g>
+                                        <path fill="#777777" d="M18.3,70.6c-0.1,0-0.2,0-0.3-0.1L4.1,62c-0.3-0.2-0.4-0.6-0.2-0.9c0.2-0.3,0.6-0.4,0.9-0.2l13.9,8.5
+                                   c0.3,0.2,0.4,0.6,0.2,0.9C18.8,70.5,18.5,70.6,18.3,70.6z" />
+                                    </g>
+                                    <g>
+                                        <path fill="#777777" d="M7.8,64.2c-0.1,0-0.2,0-0.3-0.1c-0.3-0.2-0.4-0.6-0.2-0.9l30.1-49.2c0.2-0.3,0.6-0.4,0.9-0.2
+                                   c0.3,0.2,0.4,0.6,0.2,0.9L8.4,63.8C8.3,64,8,64.2,7.8,64.2z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <input id="content" type="text" placeholder="글쓰기" maxlength="20">
+                        </div>
+                    </form>
+                </div>
+                <table id="table">
+
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner inner-container-size">
+            <div class="reserved">
+                <p>© 2021 JHJ. All rights reserved.</p>
+            </div>
+            <div class="footer-logo">
+                <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 479 667.2"
+                     enable-background="new 0 0 479 667.2" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path fill="#444545"
+                                  d="M364.7,643.4c-13.8,0-27.5-1.8-40.9-5.5c-19.5-5.3-37.5-14.2-53.5-26.4c-14.5-11-26.8-24.4-36.6-39.8
+                        c-1.4-2.2-4.1-6.7-4.1-6.7l17.8-10.2c0,0,2.5,4.2,3.8,6.3c18.1,28,45.5,48.1,77.9,56.9c33.9,9.2,69.3,5.1,100.1-11.7
+                        c0.8-0.4,2.4-1.3,2.4-1.3l10.2,17.8c0,0-3,1.7-4.5,2.5c-17,9-35.1,14.7-54.1,17C377.1,643,370.9,643.4,364.7,643.4z" />
+                        </g>
+                        <path fill="#444545"
+                              d="M426.5,23.8v83.3H285.7V23.8H31.9v20.5h233.3v62.8H158.8c-17.1,0-33.7,3.4-49.4,10
+                    c-15.1,6.4-28.7,15.5-40.3,27.2c-11.7,11.7-20.8,25.2-27.2,40.3c-6.6,15.7-10,32.3-10,49.4c0,17.1,3.4,33.7,10,49.4
+                    c6.4,15.1,15.5,28.7,27.2,40.3c11.7,11.7,25.2,20.8,40.3,27.2c15.7,6.6,32.3,10,49.4,10c17.1,0,33.7-3.4,49.4-10
+                    c15.1-6.4,28.7-15.5,40.3-27.2c11.7-11.7,20.8-25.2,27.2-40.3c6.6-15.7,10-32.3,10-49.4V127.6h140.8v295.9
+                    c0,40.4-32.9,73.2-73.2,73.2c-29,0-54.1-16.9-66-41.5c-3-6.2-5.1-12.9-6.3-19.9c-0.6-3.9-1-11.9-1-11.9h-19.9c0,0-0.2,4.6,0.7,10.7
+                    c1.2,8.2,3.2,19.2,6,25.8c4.7,11.2,11.5,21.2,20.1,29.8c8.6,8.6,18.6,15.4,29.8,20.1c11.6,4.9,23.8,7.4,36.5,7.4
+                    c12.7,0,24.9-2.5,36.5-7.4c11.2-4.7,21.2-11.5,29.8-20.1c8.6-8.6,15.4-18.6,20.1-29.8c4.9-11.5,7.3-23.7,7.4-36.3V23.8H426.5z
+                     M265.2,234c0,58.7-47.7,106.4-106.4,106.4S52.5,292.6,52.5,234c0-58.7,47.7-106.4,106.4-106.4h106.4V234z" />
+                        <g>
+                            <path fill="#444545"
+                                  d="M158.8,183.5c-25,0-45.4,20.3-45.4,45.4s20.3,45.4,45.4,45.4c25,0,45.4-20.3,45.4-45.4
+                        S183.9,183.5,158.8,183.5z M146.3,231c-8,0-14.6-6.5-14.6-14.6s6.5-14.6,14.6-14.6c8,0,14.6,6.5,14.6,14.6S154.3,231,146.3,231z" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+        $(".close").click(() => {
+            $(".resume-down").addClass("off")
+        })
+
+       $(document).ready(function() {
+
+            $.ajax({
+
+                type:'get',
+                url:"/getcontent",
+                dataType: "json",
+                async:false,
+
+                success:(data) => {
+
+                    var result = '';
+                    $.each(data, (inedx,value) => {
+                    result += '<tr><td class="board-idx">' + value.id + '</td>'
+                    result += '<td class="content">' + value.content + '</td>'
+                    result += '<td class="date">' + value.dateParse + '</td></tr>'
+                })
+
+                $('#table').append(result);
+
+                } ,
+
+                error:(err) => {
+                    console.log(err)
+                }
+
+            })
+        });
+
+        $("#content").keydown((key) => {
+            var content={"content" : $("#content").val()}
+            if (key.keyCode == 13) {
+                $("#table").empty();
+
+                $.ajax({
+
+                    type: 'post',
+                    url: "/content",
+                    dataType:"json",
+                    async:false,
+                    data: content
+
+                })
+
+
+                $.ajax({
+
+                    type:'get',
+                    url:"/getcontent",
+                    dataType: "json",
+                    async:false,
+
+                    success:(data) => {
+
+                        console.log(data)
+                        console.log(data[0].id)
+
+                        var result = '';
+                        $.each(data, (inedx,value) => {
+                        result += '<tr><td class="board-idx">' + value.id + '</td>'
+                        result += '<td class="content">' + value.content + '</td>'
+                        result += '<td class="date">' + value.dateParse + '</td></tr>'
+                    })
+
+                    $('#table').append(result);
+
+                    } ,
+
+                    error:(err) => {
+                        console.log(err)
+                    }
+
+                })
+
+                $("#content").val('');
+            }
+        })
+
+    </script>
+
+
+
+
+</body>
+
+</html>
